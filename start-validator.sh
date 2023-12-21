@@ -15,7 +15,7 @@ exec solana-validator \
     --entrypoint entrypoint3.mainnet-beta.solana.com:8001 \
     --entrypoint entrypoint4.mainnet-beta.solana.com:8001 \
     --entrypoint entrypoint5.mainnet-beta.solana.com:8001 \
-    --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
+    --expected-genesis-hash 4uhcVJyU9pJkvQyS88uRDiswHXSCkY3zQawwpjk2NsNY \
     --wal-recovery-mode skip_any_corrupted_record \
     --limit-ledger-size 50000000 \
     --log ~/validator.log \
