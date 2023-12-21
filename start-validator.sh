@@ -1,6 +1,7 @@
 #!/bin/sh
 exec solana-validator \
     --identity ~/validator-keypair.json \
+    --vote-account ~/vote-account-keypair.json \
     --no-voting \
     --ledger ~/ledger \
     --rpc-port 8899 \
@@ -21,9 +22,12 @@ exec solana-validator \
     --log ~/validator.log \
     --account-index program-id spl-token-owner spl-token-mint \
     --account-index-exclude-key kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6 \
+    --account-index-exclude-key metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s \
     --account-index-exclude-key TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA \
     --only-known-rpc \
     --enable-rpc-transaction-history \
+    --enable-cpi-and-log-storage \
+    --enable-rpc-bigtable-ledger-storage \
     --full-rpc-api \
     --rpc-bind-address 0.0.0.0 \
     --private-rpc \
