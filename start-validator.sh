@@ -20,14 +20,12 @@ exec solana-validator \
     --entrypoint entrypoint5.mainnet-beta.solana.com:8001 \
     --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
     --wal-recovery-mode skip_any_corrupted_record \
-    --limit-ledger-size 350000000 \
+    --limit-ledger-size 370000000 \
     --account-index program-id spl-token-owner spl-token-mint \
     --account-index-exclude-key kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6 \
     --account-index-exclude-key metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s \
     --only-known-rpc \
     --enable-rpc-transaction-history \
-    --enable-cpi-and-log-storage \
-    --enable-rpc-bigtable-ledger-storage \
     --full-rpc-api \
     --rpc-bind-address 0.0.0.0 \
     --private-rpc \
