@@ -29,4 +29,5 @@ exec solana-validator \
     --full-rpc-api \
     --rpc-bind-address 127.0.0.1 \
     --private-rpc \
-    --no-snapshot-fetch
+    # coloca deoois que synca
+    --no-snapshot-fetch 
