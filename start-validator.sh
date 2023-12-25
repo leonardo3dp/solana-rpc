@@ -27,7 +27,7 @@ exec solana-validator \
     --only-known-rpc \
     --enable-rpc-transaction-history \
     --full-rpc-api \
-    --rpc-bind-address 127.0.0.1 \
+    --rpc-bind-address 0.0.0.0 \
     --private-rpc \
     # coloca deoois que synca
     --no-snapshot-fetch 
