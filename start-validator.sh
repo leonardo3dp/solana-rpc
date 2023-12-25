@@ -17,7 +17,7 @@ exec solana-validator \
     --entrypoint entrypoint5.mainnet-beta.solana.com:8001 \
     --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
     --wal-recovery-mode skip_any_corrupted_record \
-    --limit-ledger-size 50000000 \
+    --limit-ledger-size \
     --log ~/validator.log \
     --account-index program-id spl-token-owner spl-token-mint \
     --account-index-exclude-key kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6 \
